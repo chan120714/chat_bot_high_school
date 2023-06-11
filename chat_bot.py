@@ -43,9 +43,7 @@ async def on_message(message):
         if i in cmd:
             await message.channel.send(random.choice(major_response))
             return
-    if "테스트" in cmd:
-        await message.channel.send("{} | {}, Hello".format(message.author, message.author.mention))
-    elif "이름" in cmd:
+    if "이름" in cmd:
         await message.channel.send("2학년 3반 13번 신찬영 입니다.")
     elif "!정보" in cmd:
         await message.channel.send("챗봇을 만들고 싶어서 만들기 시작한 프로젝트가 완성이 되었습니다.")
