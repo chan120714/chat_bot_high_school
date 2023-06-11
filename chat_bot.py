@@ -37,7 +37,7 @@ async def on_message(message):
             return
     for i in study:
         if i in cmd:
-            await message.channel.send(random.choice(study_response))
+            await message.channel.send(f"과목은 {random.choice(study_response)}을 좋아해요")
             return
     for i in major:
         if i in cmd:
