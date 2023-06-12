@@ -55,3 +55,4 @@ async def on_message(message):
         # Send a random pre-prepared response for undefined input
         response = random.choice(default)
         await message.channel.send(response)
+client.run('token')#discord bot's token
